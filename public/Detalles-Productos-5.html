@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Pagina-Web.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="/Pagina-Web.html">FelixShop</a>
+            </div>
+            <ul>
+               
+                <li><a href="/Sobre-Nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="/Contacto.html">Contacto</a></li>
+            </ul>
+            <div class="carrito">
+                <a href="#" id="miCarrito" onclick="toggleCarrito()">🛒 Carrito (<span id="carrito-count">0</span>)</a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="sobre" class="section">
+        <div class="container">
+            <div class="product-detail-content">
+
+                <section class="product-detail-img">
+
+                    <img src="/Img/Air Force.png">
+                    <img src="/Img/Air Force 2.png">
+                    <img src="/Img/Air Force 3.png">
+
+                </section>
+                
+                <div>
+                    <h2 class="product-detail-info-title">Nike Air Force 1 '07</h2>
+                    <p class="product-detail-info-message">El fulgor vive en el Nike Air Force 1 ’07, el OG de básquetbol que le da un toque fresco a lo que mejor conoces: revestimientos con costuras duraderas, acabados impecables y la cantidad perfecta de destellos para que brilles.</p>
+                    <p class="product-detail-info-price">$140.80</p>
+                    <div class="product-detail-info-buttons">
+                        <button class="btn-comprar" onclick="agregarAlCarrito('Air Force 1', 140.00, '/Img/Air Force.png')">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="toggleCarrito()">&times;</span>
+                <h2>Tu Carrito</h2>
+            </div>
+            <div class="modal-body">
+                <div id="carrito-items"></div>
+                <p id="empty-message" class="empty-message">¡Tu carrito está vacío! Añade productos para comenzar, la compra.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 FelixShop. Todos los derechos reservados.</p>
+          
+        </div>
+    </footer>
+
+    <script src="/Pagina-Web.JS"></script>
+  
+</body>
+</html>

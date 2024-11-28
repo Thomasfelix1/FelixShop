@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FelixShop</title>
+    <link rel="stylesheet" href="Pagina-Web.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="/Pagina-Web.html">FelixShop</a>
+            </div>
+            <ul>
+                
+                <li><a href="/Sobre-Nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="/Contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="comprador-form-container">
+        <h2 class="comprador-title">Datos del Comprador</h2>
+        <form id="form-compra" class="comprador-form">
+            <div class="input-group">
+                <label for="nombre" class="input-label">Nombre:</label>
+                <input type="text" id="nombre" class="input-field" required>
+            </div>
+            <div class="input-group">
+                <label for="apellido" class="input-label">Apellido:</label>
+                <input type="text" id="apellido" class="input-field" required>
+            </div>
+            <div class="input-group">
+                <label for="email" class="input-label">Email:</label>
+                <input type="email" id="email" class="input-field" required>
+            </div>
+            
+            <h3 class="section-title">Dirección de Envío</h3>
+            <div class="input-group">
+                <label for="direccion" class="input-label">Dirección:</label>
+                <input type="text" id="direccion" class="input-field" required>
+            </div>
+            <div class="input-group">
+                <label for="sector" class="input-label">Sector:</label>
+                <input type="text" id="sector" class="input-field" required>
+            </div>
+            <div class="input-group">
+                <label for="ciudad" class="input-label">Ciudad:</label>
+                <input type="text" id="ciudad" class="input-field" required>
+            </div>
+            <div class="input-group">
+                <label for="codigo_postal" class="input-label">Código Postal:</label>
+                <input type="text" id="codigo_postal" class="input-field" required>
+            </div>
+    
+            <h3 class="section-title">Método de Pago</h3>
+            <div class="input-group">
+                <label for="nombre_tarjeta" class="input-label">Nombre en la Tarjeta:</label>
+                <input type="text" id="nombre_tarjeta" class="input-field" required>
+            </div>
+            <div class="input-group">
+                <label for="numero_tarjeta" class="input-label">Número de Tarjeta:</label>
+                <input type="text" id="numero_tarjeta" class="input-field" required>
+            </div>
+            <div class="input-group">
+                <label for="fecha_vencimiento" class="input-label">Fecha de Vencimiento:</label>
+                <input type="month" id="fecha_vencimiento" class="input-field" required>
+            </div>
+            <div class="input-group">
+                <label for="cvv" class="input-label">CVV:</label>
+                <input type="text" id="cvv" class="input-field" required>
+            </div>
+    
+            <div class="carrito-resumen">
+                <h3 class="carrito-title">Detalles del Pedido</h3>
+                <div id="pedido-detalles" class="pedido-detalles"></div>
+                <div id="total-pedido" class="total-pedido"></div>
+            </div>
+    
+            <button type="submit" class="btn-finalizar">Finalizar Compra</button>
+        </form>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="toggleCarrito()">&times;</span>
+                <h2>Tu Carrito</h2>
+            </div>
+            <div class="modal-body">
+                <div id="carrito-items"></div>
+                <p id="empty-message" class="empty-message">¡Tu carrito está vacío! Añade productos para comenzar, la compra.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 FelixShop. Todos los derechos reservados.</p>
+          
+        </div>
+    </footer>
+
+    <script src="/Pagina-Web.JS"></script>
+
+</body>
+</html>

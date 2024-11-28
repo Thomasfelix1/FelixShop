@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Pagina-Web.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="/Pagina-Web.html">FelixShop</a>
+            </div>
+            <ul>
+               
+                <li><a href="/Sobre-Nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="/Contacto.html">Contacto</a></li>
+            </ul>
+            <div class="carrito">
+                <a href="#" id="miCarrito" onclick="toggleCarrito()">🛒 Carrito (<span id="carrito-count">0</span>)</a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="sobre" class="section">
+        <div class="container">
+            <div class="product-detail-content">
+
+                <section class="product-detail-img">
+
+                    <img src="/Img/Columbia.1.jpg">
+                    <img src="/Img/Columbia.2.jpg">
+                    <img src="/Img/Columbia.3.jpg">
+
+                </section>
+                
+                <div>
+                    <h2 class="product-detail-info-title">Camisa de manga larga PFG Terminal Tackle para hombre</h2>
+                    <p class="product-detail-info-message">Esta clásica camisa de pesca de manga larga cuenta con protección UV de amplio espectro, tejido que absorbe el sudor y de secado rápido para brindar comodidad y utilidad dentro y fuera del agua.</p>
+                    <p class="product-detail-info-message">La tela liviana se siente fresca y suave, mientras que las mangas raglán brindan un rango completo de movimiento, lanzamiento tras lanzamiento.</p>
+                    <p class="product-detail-info-price">$52.80</p>
+                    <div class="product-detail-info-buttons">
+                        <button class="btn-comprar" onclick="agregarAlCarrito('Camisa Columbia de manga larga PFG', 52.80, '/Img/Columbia.1.jpg')">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="toggleCarrito()">&times;</span>
+                <h2>Tu Carrito</h2>
+            </div>
+            <div class="modal-body">
+                <div id="carrito-items"></div>
+                <p id="empty-message" class="empty-message">¡Tu carrito está vacío! Añade productos para comenzar, la compra.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 FelixShop. Todos los derechos reservados.</p>
+          
+        </div>
+    </footer>
+
+    <script src="/Pagina-Web.JS"></script>
+    
+</body>
+</html>

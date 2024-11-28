@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Pagina-Web.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="/Pagina-Web.html">FelixShop</a>
+            </div>
+            <ul>
+               
+                <li><a href="/Sobre-Nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="/Contacto.html">Contacto</a></li>
+            </ul>
+            <div class="carrito">
+                <a href="#" id="miCarrito" onclick="toggleCarrito()">🛒 Carrito (<span id="carrito-count">0</span>)</a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="sobre" class="section">
+        <div class="container">
+            <div class="product-detail-content">
+
+                <section class="product-detail-img">
+
+                    <img src="/Img/Camisa.1.jpg">
+                    <img src="/Img/Camisa.2.jpg">
+                    <img src="/Img/Camisa.3.jpg">
+
+                </section>
+                
+                <div>
+                    <h2 class="product-detail-info-title">Camisa de manga corta PFG Bahama™ II para hombre</h2>
+                    <p class="product-detail-info-message">Esta clásica camisa cuenta con detalles amigables para los pescadores y tela de nailon liviana en un ajuste relajado y espacioso, esta camisa de pesca se seca rápido, te mantiene fresco y bloquea el sol para que puedas permanecer afuera por más tiempo.</p>
+                    <p class="product-detail-info-message">Las aberturas traseras forradas de malla atrapan la brisa y permiten que el aire fluya, para que te mantengas fresco y cómodo.</p>
+                    <p class="product-detail-info-price">$48.15</p>
+                    <div class="product-detail-info-buttons">
+                        <button class="btn-comprar" onclick="agregarAlCarrito('Camisa de manga corta PFG Bahama', 48.15, '/Img/Camisa.1.jpg')">Añadir al carrito</button>              
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="toggleCarrito()">&times;</span>
+                <h2>Tu Carrito</h2>
+            </div>
+            <div class="modal-body">
+                <div id="carrito-items"></div>
+                <p id="empty-message" class="empty-message">¡Tu carrito está vacío! Añade productos para comenzar, la compra.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 FelixShop. Todos los derechos reservados.</p>
+          
+        </div>
+    </footer>
+
+    <script src="/Pagina-Web.JS"></script>
+  
+</body>
+</html>

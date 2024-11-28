@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FelixShop</title>
+    <link rel="stylesheet" href="Pagina-Web.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="/Pagina-Web.html">FelixShop</a>
+            </div>
+            <ul>
+                
+                <li><a href="/Sobre-Nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="/Contacto.html">Contacto</a></li>
+            </ul>
+            <div class="carrito">
+                <a href="#" id="miCarrito" onclick="toggleCarrito()">🛒 Carrito (<span id="carrito-count">0</span>)</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="contacto-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contacto-left">
+            <div class="coctacto-title">
+                <h2>Contacto</h2>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="74c97343-90c2-4794-a1b2-efd09b8b3ebb">
+            <input type="text" name="name" placeholder="Nombre Completo" class="contacto-inputs" required>
+            <input type="email" name="email" placeholder="Correo" class="contacto-inputs" required>
+            <textarea name="message" placeholder="Mensaje" class="contacto-inputs" required></textarea>
+            <button type="submit" class="btn-enviar">Enviar</button>
+        </form>
+        <div class="contacto-right">
+            <img src="/Img/Logo.jpg">
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="toggleCarrito()">&times;</span>
+                <h2>Tu Carrito</h2>
+            </div>
+            <div class="modal-body">
+                <div id="carrito-items"></div>
+                <p id="empty-message" class="empty-message">¡Tu carrito está vacío! Añade productos para comenzar, la compra.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 FelixShop. Todos los derechos reservados.</p>
+          
+        </div>
+    </footer>
+
+    <script src="/Pagina-Web.JS"></script>
+
+</body>
+</html>

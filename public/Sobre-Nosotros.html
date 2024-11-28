@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FelixShop</title>
+    <link rel="stylesheet" href="Pagina-Web.css">
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="/Pagina-Web.html">FelixShop</a>
+            </div>
+            <ul>
+               
+                <li><a href="/Sobre-Nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="/Contacto.html">Contacto</a></li>
+            </ul>
+            <div class="carrito">
+                <a href="#" id="miCarrito" onclick="toggleCarrito()">🛒 Carrito (<span id="carrito-count">0</span>)</a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="sobre" class="section">
+        <div class="container">
+            <h2>Sobre Nosotros</h2>
+            <div class="about-content">
+                <img src="/Img/Logo.jpg" alt="Sobre nosotros">
+                <p>FelixShop es una tienda dedicada a ofrecer lo mejor en moda y estilo.Nos especializamos en productos de alta calidad como ropa, 
+                    t-shirts, hoodies y tenis, siempre a la vanguardia de las tendencias. Nuestro objetivo es brindar a nuestros clientes no solo prendas que se vean bien, 
+                    sino también que se sientan cómodas y reflejen su personalidad. En FelixShop, cada pieza está cuidadosamente seleccionada para
+                    que combines comodidad y estilo en tu día a día. ¡Descubre las últimas colecciones y dale un giro a tu look con nosotros!</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="toggleCarrito()">&times;</span>
+                <h2>Tu Carrito</h2>
+            </div>
+            <div class="modal-body">
+                <div id="carrito-items"></div>
+                <p id="empty-message" class="empty-message">¡Tu carrito está vacío! Añade productos para comenzar, la compra.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 FelixShop. Todos los derechos reservados.</p>
+          
+        </div>
+    </footer>
+
+    <script src="/Pagina-Web.JS"></script>
+
+
+</body>
+</html>
