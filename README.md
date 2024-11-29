@@ -3,6 +3,7 @@ FelixShop es un E-commerce que permite a los usuarios navegar y adquirir product
 # Características:
 - Explora los productos disponibles con sus descripciones y precios.
 - Agrega y elimina productos, ajusta cantidades y visualiza el total.
+- Completa tu compra visualizando el total y finalizando el pedido desde el carrito.
 - Backend sencillo y rápido utilizando Express y Nodemon.
 
 # Tecnologías utilizadas:
